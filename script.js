@@ -1,3 +1,2 @@
-window.onload = function () {
-    console.log("Rupesh Kumar Portfolio Loaded Successfully");
-};
+// Simple welcome message
+console.log("Welcome to Rupesh Kumar's Portfolio");
