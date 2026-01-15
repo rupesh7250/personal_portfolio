@@ -76,6 +76,8 @@ h2 {
 .py   { width: 75%; background: #22c55e; }
 .java { width: 70%; background: #0ea5e9; }
 .c    { width: 65%; background: #6366f1; }
+.c   { width: 70%; background: #b60914; }
+.C   { width: 70%; background: #f0e09f; }
 
 /* LINKS */
 a {
@@ -114,3 +116,4 @@ footer {
         height: 100px;
     }
 }
+
