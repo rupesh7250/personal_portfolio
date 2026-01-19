@@ -8,7 +8,37 @@
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- TOP NAV -->
+<nav class="top-nav">
+    <div class="logo">Rupesh</div>
+
+    <ul class="menu">
+        <li data-section="about">About</li>
+        <li data-section="skills">Skills</li>
+        <li data-section="education">Education</li>
+
+        <li class="dropdown">
+            Projects
+            <ul class="dropdown-menu">
+                <li>Portfolio Website</li>
+                <li>Cyber Notes</li>
+                <li>Landing Page</li>
+            </ul>
+        </li>
+
+        <li data-section="contact">Contact</li>
+    </ul>
+
+    <div class="hamburger">&#9776;</div>
+    <span class="nav-indicator"></span>
+</nav>
+
+<!-- CENTER IMAGE HEADER -->
+<div class="hero">
+    <img src="header.jpg" alt="Header Image">
+</div>
+
+<!-- HEADER PROFILE -->
 <header>
     <div class="profile">
         <img src="profile.jpg" alt="Rupesh Kumar">
@@ -18,17 +48,15 @@
 </header>
 
 <!-- ABOUT -->
-<section>
+<section id="about">
     <h2>About Me</h2>
-    <p>
-        Hello! My name is Rupesh Kumar. I am a BCA student interested in
-        web development and cyber security. I enjoy learning new technologies
-        and building real-world projects.
-    </p>
+    <p>Hello! My name is Rupesh Kumar. I am a BCA student interested in 
+    web development and cyber security. I enjoy learning new technologies
+    and building real-world projects.</p>
 </section>
 
 <!-- SKILLS -->
-<section>
+<section id="skills">
     <h2>Skills</h2>
     <div class="grid">
         <div class="card">HTML<div class="bar html"></div></div>
@@ -37,13 +65,13 @@
         <div class="card">Python<div class="bar py"></div></div>
         <div class="card">Java<div class="bar java"></div></div>
         <div class="card">C<div class="bar c"></div></div>
-        <div class="card">DS<div class="bar DS"></div></div>
-        <div class="card">WAD<div class="bar WAD"></div></div>
+        <div class="card">DS<div class="bar ds"></div></div>
+        <div class="card">WAD<div class="bar wad"></div></div>
     </div>
 </section>
 
 <!-- EDUCATION -->
-<section>
+<section id="education">
     <h2>Academic Information</h2>
     <div class="grid">
         <div class="card">
@@ -53,49 +81,25 @@
         </div>
         <div class="card">
             <h3>12th</h3>
-            <p> +2 Rajkiye Inter College, Motihari (Bihar)</p>
+            <p>+2 Rajkiye Inter College, Motihari (Bihar)</p>
             <p>73.2%</p>
         </div>
         <div class="card">
             <h3>10th</h3>
-            <p>Sheodhar Anutha High School, Kotwa (East champaran)</p>
+            <p>Sheodhar Anutha High School, Kotwa</p>
             <p>78.4%</p>
         </div>
     </div>
 </section>
 
-<!-- PROJECTS -->
-<section>
-    <h2>Projects</h2>
-    <div class="card">
-        <h3>Personal Portfolio Website</h3>
-        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-        <p>
-            A personal portfolio website to showcase my skills,
-            academic information, and contact details.
-        </p>
-    </div>
-</section>
-
 <!-- CONTACT -->
-<section>
+<section id="contact">
     <h2>Contact Details</h2>
     <p><strong>Email:</strong> rupeshkumar79459@gmail.com</p>
     <p><strong>Phone:</strong> 7250663074</p>
-    <p><strong>Location:</strong>INDIA, Bihar (Motihari)</p>
-    <p><strong>LinkedIn:</strong>
-        <a href="https://linkedin.com/in/rupesh-kumar-9044b5364" target="_blank">
-            linkedin.com/in/rupesh-kumar
-        </a>
-    </p>
-    <p><strong>Instagram:</strong>
-        <a href="https://instagram.com/bestu.e2626" target="_blank">
-            instagram.com/bestu.e2626
-        </a>
-    </p>
+    <p><strong>Location:</strong> INDIA, Bihar (Motihari)</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
     © 2026 Rupesh Kumar | Personal Portfolio
 </footer>
@@ -103,8 +107,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
