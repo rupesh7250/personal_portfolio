@@ -8,97 +8,147 @@
 </head>
 <body>
 
-<!-- TOP NAV -->
+<!-- NAV -->
 <nav class="top-nav">
     <div class="logo">Rupesh</div>
 
     <ul class="menu">
         <li data-section="about">About</li>
         <li data-section="skills">Skills</li>
-        <li data-section="education">Education</li>
-
-        <li class="dropdown">
-            Projects
-            <ul class="dropdown-menu">
-                <li>Portfolio Website</li>
-                <li>Cyber Notes</li>
-                <li>Landing Page</li>
-            </ul>
-        </li>
-
+        <li data-section="projects">Projects</li>
+        <li data-section="academic">Academics</li>
+        <li data-section="timeline">Timeline</li>
         <li data-section="contact">Contact</li>
+        <li id="themeToggle">🌙</li>
     </ul>
 
     <div class="hamburger">&#9776;</div>
     <span class="nav-indicator"></span>
 </nav>
 
-<!-- HEADER PROFILE -->
-<header>
-    <div class="profile">
-        <img src="profile.jpg" alt="Rupesh Kumar">
-        <h1>Rupesh Kumar</h1>
-        <p>BCA Student | Web Development & Cyber Security</p>
-    </div>
-</header>
+<!-- HERO -->
+<section class="hero">
+    <img src="profile.jpg" class="profile-pic">
+    <h1>Rupesh Kumar</h1>
+    <p>Web Developer • Cyber Security Enthusiast • BCA Student</p>
+    <button class="resume-btn" onclick="downloadResume()">📄 Download Resume</button>
+</section>
 
 <!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
     <p>
-        Hello! My name is Rupesh Kumar. I am a BCA student interested in 
-        web development and cyber security. I enjoy learning new technologies
-        and building real-world projects.
+        Hey! I'm Rupesh, a BCA student focused on Web Development and Cyber Security.
+        I love building modern UI and exploring cyber defense concepts & systems.
     </p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
     <h2>Skills</h2>
-    <div class="grid">
-        <div class="card">HTML<div class="bar html"></div></div>
-        <div class="card">CSS<div class="bar css"></div></div>
-        <div class="card">JavaScript<div class="bar js"></div></div>
-        <div class="card">Python<div class="bar py"></div></div>
-        <div class="card">Java<div class="bar java"></div></div>
-        <div class="card">C<div class="bar c"></div></div>
-        <div class="card">DS<div class="bar ds"></div></div>
-        <div class="card">WAD<div class="bar wad"></div></div>
+    <div class="skills-grid">
+        <div class="skill-card">HTML<div class="bar html"></div></div>
+        <div class="skill-card">CSS<div class="bar css"></div></div>
+        <div class="skill-card">JavaScript<div class="bar js"></div></div>
+        <div class="skill-card">Python<div class="bar py"></div></div>
+        <div class="skill-card">Java<div class="bar java"></div></div>
+        <div class="skill-card">C<div class="bar c"></div></div>
+        <div class="skill-card">DS<div class="bar ds"></div></div>
+        <div class="skill-card">WAD<div class="bar wad"></div></div>
     </div>
 </section>
 
-<!-- EDUCATION -->
-<section id="education">
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Responsive portfolio with animations & theme toggle.</p>
+            <span>HTML, CSS, JS</span>
+        </div>
+
+        <div class="project">
+            <h3>Cyber Notes Web App</h3>
+            <p>Store notes locally for cyber study content.</p>
+            <span>HTML, CSS, JS + LocalStorage</span>
+        </div>
+
+        <div class="project">
+            <h3>Login Form UI + Validation</h3>
+            <p>Frontend validation + modern UI theme.</p>
+            <span>HTML, CSS, JS</span>
+        </div>
+
+        <div class="project">
+            <h3>Certificate Manager</h3>
+            <p>Manage certificates using JS storage system.</p>
+            <span>JavaScript</span>
+        </div>
+
+        <div class="project">
+            <h3>Python Mini Tool Pack</h3>
+            <p>Calculator + Word Counter + Text tools.</p>
+            <span>Python</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- ACADEMIC -->
+<section id="academic">
     <h2>Academic Information</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>BCA</h3>
-            <p>Vignan University</p>
-            <p>2024 – 2027</p>
-        </div>
-        <div class="card">
-            <h3>12th</h3>
-            <p>+2 Rajkiye Inter College, Motihari (Bihar)</p>
-            <p>73.2%</p>
-        </div>
-        <div class="card">
+    <div class="edu-grid">
+
+        <div class="edu-card">
             <h3>10th</h3>
-            <p>Sheodhar Anutha High School, Kotwa</p>
-            <p>78.4%</p>
+            <p>School: Sheodhar Anutha High School, Kotwa</p>
+            <p>Year: 2021</p>
+            <p>Percentage: 78.4%</p>
         </div>
+
+        <div class="edu-card">
+            <h3>12th</h3>
+            <p>College: +2 Rajkiye Inter College, Motihari</p>
+            <p>Year: 2023</p>
+            <p>Percentage: 73.2%</p>
+        </div>
+
+        <div class="edu-card">
+            <h3>BCA</h3>
+            <p>University: Vignan University</p>
+            <p>Year: 2024 – 2027</p>
+            <p>Status: Pursuing</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+    <h2>My Journey</h2>
+    <div class="timeline">
+        <div><strong>2024</strong> → Started BCA</div>
+        <div><strong>2025</strong> → Learned Web Development</div>
+        <div><strong>2025</strong> → Started Cyber Security Exploration</div>
+        <div><strong>2026</strong> → Portfolio + Projects Build</div>
     </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2>Contact Details</h2>
-    <p><strong>Email:</strong> rupeshkumar79459@gmail.com</p>
-    <p><strong>Phone:</strong> 7250663074</p>
-    <p><strong>Location:</strong> INDIA, Bihar (Motihari)</p>
+    <h2>Contact Me</h2>
+    <form class="contact-form" onsubmit="sendMail(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
 </section>
 
 <footer>
-    © 2026 Rupesh Kumar | Personal Portfolio
+    © 2026 Rupesh Kumar | Portfolio
 </footer>
 
 <script src="script.js"></script>
