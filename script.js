@@ -1,60 +1,66 @@
-console.log("Portfolio Loaded");
-
-// nav underline
-const items = document.querySelectorAll(".menu > li");
-const indicator = document.querySelector(".nav-indicator");
-
-items.forEach(item=>{
-    item.addEventListener("mouseenter",e=>{
-        const {offsetLeft,offsetWidth}=e.target;
-        indicator.style.width=offsetWidth+"px";
-        indicator.style.left=offsetLeft+"px";
+// ======================
+// SMOOTH NAV SECTION SCROLL
+// ======================
+document.querySelectorAll(".nav-links li").forEach(item =>{
+    item.addEventListener("click",()=>{
+        const sec = item.getAttribute("data-section");
+        document.getElementById(sec).scrollIntoView({behavior:"smooth"});
     });
 });
 
-document.querySelector(".menu").addEventListener("mouseleave",()=>{
-    indicator.style.width=0;
-});
-
-// scroll sections
-items.forEach(item=>{
-    const sec=item.getAttribute("data-section");
-    if(sec){
-        item.addEventListener("click",()=>{
-            document.getElementById(sec).scrollIntoView({behavior:"smooth"});
-        });
-    }
-});
-
-// mobile toggle
-document.querySelector(".hamburger").addEventListener("click",()=>{
-    const menu=document.querySelector(".menu");
-    menu.style.display=menu.style.display==="flex"?"none":"flex";
-});
-
-// certificates modal
-function openCert(src){
-    document.getElementById("certModal").style.display="flex";
-    document.getElementById("certPreview").src=src;
-}
-
-document.getElementById("certModal").addEventListener("click",()=>{
-    document.getElementById("certModal").style.display="none";
-});
-
-// dark mode switch
-const toggle=document.getElementById("themeToggle");
-toggle.addEventListener("click",()=>{
-    document.body.classList.toggle("dark");
-});
-
-// resume download
+// ======================
+// DOWNLOAD RESUME
+// ======================
 function downloadResume(){
-    window.open("resume.pdf","_blank");
+    window.open("resume.pdf", "_blank");
 }
 
-// contact form submit
+// ======================
+// CONTACT FORM SUBMIT
+// ======================
 function sendMail(e){
     e.preventDefault();
     alert("Message Sent Successfully!");
 }
+
+// ======================
+// THEME (LIGHT / DARK) FUTURE SUPPORT
+// ======================
+document.querySelector(".theme-btn").addEventListener("click",()=>{
+    document.body.classList.toggle("light-mode");
+});
+
+// ======================
+// SCROLL REVEAL ANIMATIONS
+// ======================
+const observer = new IntersectionObserver(entries =>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+}, {threshold:0.25});
+
+document.querySelectorAll(".section, .hero").forEach(el=>{
+    observer.observe(el);
+});
+
+// ======================
+// 3D CARD HOVER (MOUSE TILT)
+// ======================
+document.querySelectorAll(".card").forEach(card=>{
+    card.addEventListener("mousemove", e=>{
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener("mouseleave", ()=>{
+        card.style.transform = "rotateX(0deg) rotateY(0deg)";
+    });
+});
