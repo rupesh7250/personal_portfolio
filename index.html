@@ -8,9 +8,8 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav">
-    <div class="logo">Personal Portfolio</div>
+    <div class="logo">Rupesh.dev</div>
     <ul class="nav-links">
         <li data-section="hero">Home</li>
         <li data-section="about">About</li>
@@ -20,10 +19,8 @@
         <li data-section="timeline">Timeline</li>
         <li data-section="contact">Contact</li>
     </ul>
-    <div class="theme-btn">🌙</div>
 </nav>
 
-<!-- HERO -->
 <section class="hero section" id="hero">
     <img src="profile.jpg" class="dp">
     <h1 class="hero-title">Rupesh Kumar</h1>
@@ -31,16 +28,14 @@
     <button class="resume-btn" onclick="downloadResume()">📄 Download Resume</button>
 </section>
 
-<!-- ABOUT -->
 <section class="section" id="about">
     <h2>About Me</h2>
     <p>
         Hey! I'm Rupesh, a BCA student focused on Web Development and Cyber Security.
-        I love building modern UI and exploring cyber defense concepts & systems.
+        I love building modern UI and exploring cyber defense systems & technologies.
     </p>
 </section>
 
-<!-- SKILLS -->
 <section class="section" id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
@@ -55,19 +50,17 @@
     </div>
 </section>
 
-<!-- PROJECTS -->
 <section class="section" id="projects">
     <h2>Projects</h2>
     <div class="projects-grid">
         <div class="card">Portfolio Website</div>
-        <div class="card">Cyber Notes App</div>
+        <div class="card">Cyber Notes Web App</div>
         <div class="card">Login UI + Validation</div>
         <div class="card">Certificate Manager</div>
         <div class="card">Python Tool Pack</div>
     </div>
 </section>
 
-<!-- ACADEMIC -->
 <section class="section" id="academic">
     <h2>Academic Information</h2>
     <div class="academics-grid">
@@ -77,14 +70,12 @@
             <p>Year: 2021</p>
             <p>78.4%</p>
         </div>
-
         <div class="card">
             <h3>12th</h3>
             <p>+2 Rajkiye Inter College, Motihari</p>
             <p>Year: 2023</p>
             <p>73.2%</p>
         </div>
-
         <div class="card">
             <h3>BCA</h3>
             <p>Vignan University</p>
@@ -94,7 +85,6 @@
     </div>
 </section>
 
-<!-- TIMELINE -->
 <section class="section" id="timeline">
     <h2>My Journey</h2>
     <div class="timeline">
@@ -105,15 +95,20 @@
     </div>
 </section>
 
-<!-- CONTACT -->
 <section class="section" id="contact">
     <h2>Contact Me</h2>
-    <form class="contact-form" onsubmit="sendMail(event)">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+
+    <div class="contact-buttons">
+        <button class="btn-whatsapp" onclick="sendWhatsApp()">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+            WhatsApp
+        </button>
+
+        <button class="btn-gmail" onclick="sendEmail()">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+            Gmail
+        </button>
+    </div>
 </section>
 
 <footer>
