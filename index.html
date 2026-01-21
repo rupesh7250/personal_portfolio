@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Rupesh Kumar | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +13,6 @@
     <div class="logo">Rupesh.dev</div>
     <ul class="nav-links">
         <li data-section="hero">Home</li>
-        <li data-section="about">About</li>
         <li data-section="skills">Skills</li>
         <li data-section="projects">Projects</li>
         <li data-section="academic">Academics</li>
@@ -21,19 +21,26 @@
     </ul>
 </nav>
 
-<section class="hero section" id="hero">
-    <img src="profile.jpg" class="dp">
-    <h1 class="hero-title">Rupesh Kumar</h1>
-    <p class="hero-tagline">Web Developer • Cyber Security Enthusiast • BCA Student</p>
-    <button class="resume-btn" onclick="downloadResume()">📄 Download Resume</button>
-</section>
+<section class="hero-wrapper section" id="hero">
 
-<section class="section" id="about">
-    <h2>About Me</h2>
-    <p>
-        Hey! I'm Rupesh Kumar, a BCA student focused on Web Development and Cyber Security.
-        I love building modern UI and exploring cyber defense systems & technologies.
-    </p>
+    <div class="hero-left">
+        <div class="about-box">
+            <h2>About Me</h2>
+            <p>
+                I'm Rupesh, currently pursuing BCA and exploring Web Development & Cyber Security.
+                I enjoy learning new technologies, building projects, and understanding how systems work.
+            </p>
+        </div>
+
+        <button class="resume-btn" onclick="downloadResume()">📄 Download Resume</button>
+    </div>
+
+    <div class="hero-right">
+        <img src="profile.jpg" class="dp">
+        <h1 class="hero-title">Rupesh Kumar</h1>
+        <p class="banner-text"></p>
+    </div>
+
 </section>
 
 <section class="section" id="skills">
@@ -67,13 +74,13 @@
         <div class="card">
             <h3>10th</h3>
             <p>Sheodhar Anutha High School, Kotwa</p>
-            <p>Year: 2021</p>
+            <p>2021</p>
             <p>78.4%</p>
         </div>
         <div class="card">
             <h3>12th</h3>
             <p>+2 Rajkiye Inter College, Motihari</p>
-            <p>Year: 2023</p>
+            <p>2023</p>
             <p>73.2%</p>
         </div>
         <div class="card">
@@ -100,13 +107,10 @@
 
     <div class="contact-buttons">
         <button class="btn-whatsapp" onclick="sendWhatsApp()">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-            WhatsApp
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"> WhatsApp
         </button>
-
         <button class="btn-gmail" onclick="sendEmail()">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
-            Gmail
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"> Gmail
         </button>
     </div>
 </section>
@@ -118,4 +122,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
