@@ -1,15 +1,7 @@
-/* RESET */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Inter',sans-serif;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 body{background:#0b0e14;color:#e6e6e6;}
 html{scroll-behavior:smooth}
 
-/* NAV */
 .nav{
     position:sticky;top:0;padding:14px 40px;
     display:flex;justify-content:space-between;align-items:center;
@@ -18,40 +10,25 @@ html{scroll-behavior:smooth}
 .logo{font-size:24px;font-weight:700;color:#8b5cf6;}
 .nav-links{display:flex;gap:28px;list-style:none;cursor:pointer;}
 
-/* HERO */
 .hero-wrapper{display:flex;justify-content:space-between;padding:60px 40px;gap:50px;}
 .hero-left{flex:1.2;}
 .about-box h2{font-size:30px;color:#8b5cf6;margin-bottom:12px;}
-.about-box p{font-size:26px;line-height:1.7;max-width:750px;margin-bottom:26px;}
+.about-box p{font-size:22px;line-height:1.7;max-width:750px;margin-bottom:26px;}
 
-/* RESUME BUTTON ANIMATION */
 .resume-btn{
-    padding:14px 22px;
-    border:none;
-    border-radius:10px;
-    font-size:20px;
-    font-weight:600;
+    padding:14px 22px;border:none;border-radius:10px;
+    font-size:20px;font-weight:600;
     background:linear-gradient(90deg,#6366f1,#8b5cf6,#0ea5e9);
-    color:white;
-    cursor:pointer;
-    transition:.25s;
+    color:white;cursor:pointer;transition:.25s;
 }
-.resume-btn:hover{
-    transform:translateY(-4px) scale(1.05);
-    box-shadow:0 6px 20px rgba(0,0,0,.25);
-}
-.resume-btn:active{
-    transform:scale(0.96);
-}
+.resume-btn:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 6px 20px rgba(0,0,0,.25);}
+.resume-btn:active{transform:scale(0.96);}
 
 .hero-right{text-align:center;flex:1;}
 
-/* PHOTO GLOW */
 .dp{
-    width:240px;height:240px;border-radius:50%;object-fit:cover;
-    border:3px solid #8b5cf6;
-    animation:neonGlow 4s ease-in-out infinite alternate;
-    transition:.35s ease;
+    width:240px;height:240px;border-radius:50%;object-fit:cover;border:3px solid #8b5cf6;
+    animation:neonGlow 4s ease-in-out infinite alternate;transition:.35s ease;
 }
 .dp:hover{transform:scale(1.06);filter:brightness(1.2);}
 @keyframes neonGlow{
@@ -63,17 +40,15 @@ html{scroll-behavior:smooth}
 .hero-title{font-size:34px;font-weight:700;margin-bottom:6px;}
 .banner-text{font-size:22px;font-weight:600;color:#8b5cf6;opacity:0;transition:.4s;min-height:26px;}
 
-/* SECTIONS */
 .section{margin:35px 40px;padding:28px;border-radius:14px;background:rgba(255,255,255,.03);}
 h2{color:#8b5cf6;margin-bottom:18px;}
 
-/* GRID + HOVER */
 .skills-grid,.projects-grid,.academics-grid{
     display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;
 }
 .skill,.card{
     padding:16px;border-radius:10px;background:rgba(255,255,255,.05);
-    font-size:18px;transition:.25s;transform:translateY(0);
+    font-size:18px;transition:.25s;
 }
 .skill:hover,.card:hover{
     transform:translateY(-6px) scale(1.03);
@@ -81,15 +56,29 @@ h2{color:#8b5cf6;margin-bottom:18px;}
     border:1px solid rgba(139,92,246,.5);
 }
 
-/* TIMELINE */
+.cert-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;
+}
+.cert-card{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:16px;border-radius:10px;background:rgba(255,255,255,.05);font-size:18px;transition:.25s;
+}
+.cert-card:hover{
+    transform:translateY(-6px) scale(1.03);
+    border:1px solid rgba(139,92,246,.5);
+    box-shadow:0 6px 20px rgba(0,0,0,.25);
+}
+.cert-card button{
+    padding:8px 14px;border:none;border-radius:8px;cursor:pointer;
+    background:#6366f1;color:white;font-weight:600;
+}
+.cert-card button:hover{transform:scale(1.06);}
+
 .timeline div{
     padding:8px 0;padding-left:10px;border-left:3px solid #6366f1;transition:.25s;
 }
-.timeline div:hover{
-    padding-left:16px;color:#a78bfa;border-left-color:#a78bfa;
-}
+.timeline div:hover{padding-left:16px;color:#a78bfa;border-left-color:#a78bfa;}
 
-/* CONTACT */
 .contact-buttons{display:flex;gap:18px;margin-top:12px;}
 .contact-buttons button{
     padding:14px 22px;border:none;border-radius:10px;font-size:20px;font-weight:600;
@@ -100,7 +89,6 @@ h2{color:#8b5cf6;margin-bottom:18px;}
 .btn-gmail{background:#EA4335;}
 .contact-buttons button:hover{transform:translateY(-4px) scale(1.05);}
 
-/* FOOTER */
 footer{text-align:center;padding:14px;opacity:.7;margin-top:30px;}
 
 @media(max-width:800px){
