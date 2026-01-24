@@ -9,6 +9,13 @@ function downloadResume(){
     window.open("resume.pdf","_blank");
 }
 
+function downloadCert(file){
+    const a=document.createElement("a");
+    a.href=file;
+    a.download=file;
+    a.click();
+}
+
 function sendWhatsApp(){
     const phone="917250663074";
     const mobile=`whatsapp://send?phone=${phone}`;
