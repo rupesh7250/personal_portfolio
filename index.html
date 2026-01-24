@@ -16,22 +16,18 @@
         <li data-section="skills">Skills</li>
         <li data-section="projects">Projects</li>
         <li data-section="academic">Academics</li>
+        <li data-section="certificates">Certificates</li>
         <li data-section="timeline">Timeline</li>
         <li data-section="contact">Contact</li>
     </ul>
 </nav>
 
 <section class="hero-wrapper section" id="hero">
-
     <div class="hero-left">
         <div class="about-box">
             <h2>About Me</h2>
-            <p>
-                I'm Rupesh Kumar, currently pursuing BCA and exploring Web Development & Cyber Security.
-                I enjoy learning new technologies, building projects, and understanding how systems work.
-            </p>
+            <p>I'm Rupesh Kumar, currently pursuing BCA and exploring Web Development & Cyber Security.</p>
         </div>
-
         <button class="resume-btn" onclick="downloadResume()">📄 Download Resume</button>
     </div>
 
@@ -40,7 +36,6 @@
         <h1 class="hero-title">Rupesh Kumar</h1>
         <p class="banner-text"></p>
     </div>
-
 </section>
 
 <section class="section" id="skills">
@@ -92,6 +87,33 @@
     </div>
 </section>
 
+<section class="section" id="certificates">
+    <h2>Certificates</h2>
+    <div class="cert-grid">
+
+        <div class="cert-card">
+            <span>HTML Basic Quiz Certificate</span>
+            <button onclick="downloadCert('HTML Basic quize certificate.pdf')">⬇ Download</button>
+        </div>
+
+        <div class="cert-card">
+            <span>CSS Basic Quiz Certificate</span>
+            <button onclick="downloadCert('CSS Basic quize certificate.pdf')">⬇ Download</button>
+        </div>
+
+        <div class="cert-card">
+            <span>JavaScript Basic Quiz Certificate</span>
+            <button onclick="downloadCert('Javascript Basic quize certificate.pdf')">⬇ Download</button>
+        </div>
+
+        <div class="cert-card">
+            <span>Python Basic Quiz Certificate</span>
+            <button onclick="downloadCert('python Basic quize certificate.pdf')">⬇ Download</button>
+        </div>
+
+    </div>
+</section>
+
 <section class="section" id="timeline">
     <h2>My Journey</h2>
     <div class="timeline">
@@ -104,7 +126,6 @@
 
 <section class="section" id="contact">
     <h2>Contact Me</h2>
-
     <div class="contact-buttons">
         <button class="btn-whatsapp" onclick="sendWhatsApp()">
             <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"> WhatsApp
@@ -122,4 +143,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
